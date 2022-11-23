@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function SSR({ formattedDate }) {
     return (
       <>
@@ -9,7 +11,7 @@ export default function SSR({ formattedDate }) {
           It was rendered on {formattedDate}.
         </p>
         <p>
-          <a href="/">View a static page.</a>
+          <Link href="/">View a static page.</Link>
         </p>
       </>
     );
